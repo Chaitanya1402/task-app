@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="heading">
+            Add your pending tasks here!
+        </h1>
+        <form class="second-container">
+            <p id="task-error">Please fill out this field</p>
+            <label for="title" class="task">Task :
+                <input type="text" name="title" id="title" size="50" autocomplete="off">
+            </label>
+
+            <p id="desc-error">Please fill out this field</p>
+            <label for="description" class="desc">Description :
+                <input type="text" name="description" size="50" id="description" autocomplete="off">
+            </label>
+
+            <button class="btn" id="add" type="button" onclick="addElement()">Add</button>
+            <button class="btn" id="clear" type="button" onclick="clearAll()">Clear</button>
+
+        </form>
+        <h2 class="sub-heading">TODO List:</h2>
+        <table id="table">
+            <tr style="background-color: rgb(154, 241, 154);">
+                <th class="sr-no">Sr. No.</th>
+                <th style="width:25%">Task</th>
+                <th style="width:55%">Description</th>
+                <th class="act">Actions</th>
+            </tr>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
